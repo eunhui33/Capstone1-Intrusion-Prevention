@@ -21,7 +21,7 @@ It uses the **CIC-IDS2018 dataset** and an **MLP (Multilayer Perceptron)** model
 | **AI / ML** | scikit-learn (MLP – my implementation), CatBoost (selected for deployment) |
 | **Data Processing** | Pandas, NumPy, imbalanced-learn (SMOTE) |
 | **Packet Capture & Flow Features** | tcpdump, tshark, CICFlowMeter |
-| **Backend / API** | FastAPI, Uvicorn |
+| **Backend / API** | FastAPI |
 | **Infrastructure / Deployment** | Linux, Naver Cloud Platform (NCP, AWS-equivalent) |
 | **IoT Testbed** | Raspberry Pi |
 | **Visualization & Evaluation** | Matplotlib, Seaborn |
@@ -30,12 +30,10 @@ It uses the **CIC-IDS2018 dataset** and an **MLP (Multilayer Perceptron)** model
 ---
 
 ## 💻 My Contributions
-- Designed and implemented the end-to-end AI-based intrusion detection pipeline, focusing on real-time detection and automated response for IoT network traffic.
-- Built and trained an MLP-based intrusion detection model using the CIC-IDS2018 dataset (30K samples), achieving a 93.7% F1-score through careful feature preprocessing, model tuning, and early stopping.
-- Developed the data preprocessing workflow, including IP-to-integer encoding, label encoding, normalization, and SMOTE-based oversampling to address class imbalance in network traffic data.
-- Implemented a real-time packet capture and inference pipeline (tshark → CICFlowMeter → FastAPI) to extract flow-level features and classify live network traffic from remote IoT devices.
-- Designed evaluation and visualization modules to assess model performance, including confusion matrices, ROC-AUC, MCC, and accuracy metrics, enabling systematic validation of detection reliability.
-- Deployed the intrusion prevention system on Naver Cloud Platform (NCP, AWS-equivalent) and validated real-time attack blocking using simulated DDoS and Brute Force scenarios on a Raspberry Pi IoT testbed.
+- Develop an AI-based real-time intrusion prevention system for IoT.
+- Developed MLP-based intrusion detection model (F1=0.937) trained on CIC-IDS2018 network traffic data
+- Built automated detection pipeline (tshark → CICFlowMeter → FastAPI) for live traffic analysis and blocking
+- Deployed system on Naver Cloud Platform (IaaS, comparable to AWS) and simulated DDoS and brute-force attacks using Raspberry Pi test environment.
 - Led a 4-member team as project lead, coordinating AI model development, backend integration, milestone delivery, and weekly technical reporting to the faculty advisor.
 
 
